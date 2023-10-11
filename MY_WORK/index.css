@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('p2.avif')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+.btns a{
+  text-decoration: none;
+  color: #fff;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+.about-us {
+    background: #f8f8f8;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.about-us p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.about-us a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-us {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style for the contact information (you can customize this) */
+.contact-info {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Style for the link (you can customize this) */
+.contact-link {
+    color: #5b13b9;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Your existing styles here */
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  /* Adjust the styles for smaller screens here */
+  nav .menu {
+    padding: 0 10px; /* Example: Reduce padding */
+  }
+  nav .menu ul{
+    flex-direction: column;
+  }
+
+  .menu .logo a {
+    font-size: 20px; /* Example: Decrease font size */
+  }
+
+  .menu ul li a {
+    font-size: 16px; /* Example: Decrease font size */
+    padding: 8px 10px; /* Example: Reduce padding */
+  }
+
+  .center {
+    left: 45%; /* Example: Adjust left position */
+  }
+
+  .center .title {
+    font-size: 30px; /* Example: Decrease font size */
+  }
+
+  .center .sub_title {
+    font-size: 30px; /* Example: Decrease font size */
+  }
+
+  .center .btns {
+    margin-top: 10px; /* Example: Reduce top margin */
+    margin-left: 10px; /* Example: Reduce left margin */
+  }
+
+  .center .btns button {
+    height: 45px; /* Example: Decrease button height */
+    width: 150px; /* Example: Decrease button width */
+    font-size: 18px; /* Example: Decrease font size */
+    padding: 0 8px; /* Example: Reduce padding */
+  }
+
+  .about-us {
+    padding: 20px; /* Example: Reduce padding */
+  }
+
+  .about-us h2 {
+    font-size: 24px; /* Example: Decrease font size */
+  }
+
+  .about-us p {
+    font-size: 16px; /* Example: Decrease font size */
+  }
+
+  .contact-info {
+    font-size: 16px; /* Example: Decrease font size */
+  }
+
+  /* Add any other responsive adjustments here */
+}
