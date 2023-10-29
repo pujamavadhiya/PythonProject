@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <title>Form with Validation</title>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form id="myForm" onsubmit="return storeUserInfo()">
+        <fieldset>
+            <legend>About You</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="desgn">Designation:</label>
+            <input type="text" id="desgn" name="desgn" required><br>
+
+            <label for="about">About Yourself:</label>
+            <textarea id="about" name="about" required></textarea><br>
+
+            <label for="skill">Skills:</label>
+            <input type="textarea" id="skill" name="skill" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <div id="educationDetails">
+                <div class="educationRow">
+                    <label for="uni_1">School/University:</label>
+                    <input type="text" name="uni_1" id="uni_1" required><br>
+
+                    <label for="course_1">Course Name:</label>
+                    <input type="text" id="course_1" name="course_1" required><br>
+
+                    <label for="yc_1">Year of Completion:</label>
+                    <input type="text" id="yc_1" name="yc_1" required><br>
+                </div>
+            </div>
+            <button type="button" id="addEducation">+ Add Education</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <div id="experienceDetails">
+                <div class="experienceRow">
+                    <label for="cname_1">Company Name:</label>
+                    <input type="text" name="cname_1" id="cname_1" required><br>
+
+                    <label for="cdesgn_1">Designation:</label>
+                    <input type="text" name="cdesgn_1" required><br>
+
+                    <label for="sd_1">Start Date:</label>
+                    <input type="date" name="sd_1" id="sd_1" required><br>
+
+                    <label for="ed_1">End Date:</label>
+                    <input type="date" name="ed_1" id="ed_1"><br>
+
+                    <input type="checkbox" name="currwork" id="currwork">
+                    <label for="currwork">Currently Working</label><br>
+                </div>
+            </div>
+            <button type="button" id="addExperience">+ Add Experience</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Project Details</legend>
+            <div id="projectDetails">
+                <div class="projectRow">
+                    <label for="pname_1">Title of Project:</label>
+                    <input type="text" name="pname_1" id="pname_1" required><br>
+
+                    <label for="pdesc_1">Description</label>
+                    <input type="text" name="pdesc_1" id="pdesc_1" required><br>
+                </div>
+            </div>
+            <button type="button" id="addEducation">+ Add Education</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="eid">Email:</label>
+            <input type="email" id="eid" name="eid" required><br>
+
+            <label for="lid">LinkedIn Profile URL:</label>
+            <input type="url" id="lid" name="lid" required><br>
+
+            <label for="cid">Contact Number:</label>
+            <input type="tel" id="cid" name="cid" required><br>
+
+            <label for="aid">Address:</label>
+            <textarea id="aid" name="aid" required></textarea><br>
+        </fieldset>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</body>
+</html>
