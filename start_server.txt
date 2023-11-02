@@ -1,0 +1,5 @@
+## Activate Python ENV
+.\python_project\Scripts\activate
+
+## Start Flask APP to run Backend Server.
+python .\api\app.py
